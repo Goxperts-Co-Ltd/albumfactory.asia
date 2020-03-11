@@ -4,12 +4,12 @@ get_header();
 <!-- Hero section -->
 <section class="hero-section">
 		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory');?>/assets/img/bg.jpg">
+			<div class="hs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory');?>/assets/img/album/33.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6 col-lg-7 text-white">
-							<span>New Arrivals</span>
-							<h2>denim jackets</h2>
+							<span>Premium</span>
+							<h2>Wedding Albums</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 							<a href="#" class="site-btn sb-line">DISCOVER</a>
 							<a href="#" class="site-btn sb-white">ADD TO CART</a>
@@ -22,12 +22,12 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<div class="hs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory');?>/assets/img/bg-2.jpg">
+			<div class="hs-item set-bg" data-setbg="<?php bloginfo('stylesheet_directory');?>/assets/img/album/39-bg.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6 col-lg-7 text-white">
-							<span>New Arrivals</span>
-							<h2>denim jackets</h2>
+							<span>Featured</span>
+							<h2>Leather Albums</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 							<a href="#" class="site-btn sb-line">DISCOVER</a>
 							<a href="#" class="site-btn sb-white">ADD TO CART</a>
@@ -66,7 +66,7 @@ get_header();
 						<div class="feature-icon">
 							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/icons/2.png" alt="#">
 						</div>
-						<h2>Premium Products</h2>
+						<h2>Premium Albums</h2>
 					</div>
 				</div>
 				<div class="col-md-4 p-0 feature">
@@ -87,12 +87,12 @@ get_header();
 	<section class="top-letest-product-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>LATEST PRODUCTS</h2>
+				<h2>LATEST ALBUMS</h2>
 			</div>
 			<div class="product-slider owl-carousel">
 				<div class="product-item">
 					<div class="pi-pic">
-						<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/1.jpg" alt="">
+						<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/1.jpg" alt="">
 						<div class="pi-links">
 							<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 							<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -106,7 +106,7 @@ get_header();
 				<div class="product-item">
 					<div class="pi-pic">
 						<div class="tag-new">New</div>
-						<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/2.jpg" alt="">
+						<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/2.jpg" alt="">
 						<div class="pi-links">
 							<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 							<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -119,7 +119,7 @@ get_header();
 				</div>
 				<div class="product-item">
 					<div class="pi-pic">
-						<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/3.jpg" alt="">
+						<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/3.jpg" alt="">
 						<div class="pi-links">
 							<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 							<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -132,7 +132,7 @@ get_header();
 				</div>
 				<div class="product-item">
 						<div class="pi-pic">
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/4.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/4.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -145,7 +145,7 @@ get_header();
 					</div>
 				<div class="product-item">
 						<div class="pi-pic">
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/6.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/5.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -167,7 +167,7 @@ get_header();
 	<section class="product-filter-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>BROWSE TOP SELLING PRODUCTS</h2>
+				<h2>BROWSE TOP SELLING ALBUMS</h2>
 			</div>
 			<ul class="product-filter-menu">
 				<li><a href="#">TOPS</a></li>
@@ -183,7 +183,7 @@ get_header();
 				<div class="col-lg-3 col-sm-6">
 					<div class="product-item">
 						<div class="pi-pic">
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/5.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/38.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -199,7 +199,7 @@ get_header();
 					<div class="product-item">
 						<div class="pi-pic">
 							<div class="tag-sale">ON SALE</div>
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/6.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/7.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -214,7 +214,7 @@ get_header();
 				<div class="col-lg-3 col-sm-6">
 					<div class="product-item">
 						<div class="pi-pic">
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/7.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/8.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -229,7 +229,7 @@ get_header();
 				<div class="col-lg-3 col-sm-6">
 					<div class="product-item">
 						<div class="pi-pic">
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/8.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/9.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -244,7 +244,7 @@ get_header();
 				<div class="col-lg-3 col-sm-6">
 					<div class="product-item">
 						<div class="pi-pic">
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/9.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/10.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -259,7 +259,7 @@ get_header();
 				<div class="col-lg-3 col-sm-6">
 					<div class="product-item">
 						<div class="pi-pic">
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/10.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/11.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -274,7 +274,7 @@ get_header();
 				<div class="col-lg-3 col-sm-6">
 					<div class="product-item">
 						<div class="pi-pic">
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/11.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/12.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
@@ -289,7 +289,7 @@ get_header();
 				<div class="col-lg-3 col-sm-6">
 					<div class="product-item">
 						<div class="pi-pic">
-							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/product/12.jpg" alt="">
+							<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/album/13.jpg" alt="">
 							<div class="pi-links">
 								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>

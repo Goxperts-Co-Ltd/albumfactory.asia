@@ -1,134 +1,132 @@
 <?php
 
-	// Utilities
-
 	include( 'configure/utilities.php' );
-
-	// CONFIG
-
 	include( 'configure/configure.php' );
-
-	// JAVASCRIPT & CSS
-
 	include( 'configure/js-css.php' );
-
-	// SHORTCODES
-
 	include( 'configure/shortcodes.php' );
-
-	// ACF
-
 	include( 'configure/acf.php' );
+
+	//woocomerce support
+	function mytheme_add_woocommerce_support() {
+		add_theme_support( 'woocommerce' );
+	}
+	add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+	
+	// Remove default link around product entries
+	remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
+
+
+
 
 	// HOOKS ADMIN
 //main menu
-function wp_get_menu_array($current_menu) {
+// function wp_get_menu_array($current_menu) {
 
-    $array_menu = wp_get_nav_menu_items($current_menu);
+//     $array_menu = wp_get_nav_menu_items($current_menu);
  
-    foreach ($array_menu as $m) {
-        if (empty($m->menu_item_parent)) {
-			if($m->title == 'Want a Job'){
+//     foreach ($array_menu as $m) {
+//         if (empty($m->menu_item_parent)) {
+// 			if($m->title == 'Want a Job'){
 
-				echo '<li class="nav-item cta cta-colored"><a href="';
-				 echo $m->url;
-				 echo '" class="nav-link">';
-				//echo '<h2>';
-				echo  $m->title;
-				// echo '</h2>';
-				echo '</a></li>';
+// 				echo '<li class="nav-item cta cta-colored"><a href="';
+// 				 echo $m->url;
+// 				 echo '" class="nav-link">';
+// 				//echo '<h2>';
+// 				echo  $m->title;
+// 				// echo '</h2>';
+// 				echo '</a></li>';
 	
-				}elseif($m->title == 'Post a Job'){
-				echo '<li class="nav-item cta mr-md-1"><a href="';
-				 echo $m->url;
-				 echo '" class="nav-link">';
-				//echo '<h2>';
-				echo  $m->title;
-				// echo '</h2>';
-				echo '</a></li>';
-				}else{
+// 				}elseif($m->title == 'Post a Job'){
+// 				echo '<li class="nav-item cta mr-md-1"><a href="';
+// 				 echo $m->url;
+// 				 echo '" class="nav-link">';
+// 				//echo '<h2>';
+// 				echo  $m->title;
+// 				// echo '</h2>';
+// 				echo '</a></li>';
+// 				}else{
 
-				echo '<li class="nav-item active"><a href="';
-				echo $m->url;
-				echo '" class="nav-link">';
-				//echo '<h2>';
-				echo  $m->title;
-				// echo '</h2>';
-				 echo '</a></li>';					
-			   }        
-        }
-    }
+// 				echo '<li class="nav-item active"><a href="';
+// 				echo $m->url;
+// 				echo '" class="nav-link">';
+// 				//echo '<h2>';
+// 				echo  $m->title;
+// 				// echo '</h2>';
+// 				 echo '</a></li>';					
+// 			   }        
+//         }
+//     }
    
-    return $menu;
-}
+//     return $menu;
+// }
 
-//Employers footer menu
-function wp_get_employers_footer_menu_array($current_menu) {
+// //Employers footer menu
+// function wp_get_employers_footer_menu_array($current_menu) {
 
-    $array_menu = wp_get_nav_menu_items($current_menu);
+//     $array_menu = wp_get_nav_menu_items($current_menu);
  
-    foreach ($array_menu as $m) {  
-		if (empty($m->menu_item_parent)) {     
-			echo '<li><a href="';
- 			echo $m->url;
- 			echo '" class="pb-1 d-block">';
-			//echo '<h2>';
-			echo  $m->title;
-			// echo '</h2>';
-			echo '</a></li>';  
-        }
-    }
+//     foreach ($array_menu as $m) {  
+// 		if (empty($m->menu_item_parent)) {     
+// 			echo '<li><a href="';
+//  			echo $m->url;
+//  			echo '" class="pb-1 d-block">';
+// 			//echo '<h2>';
+// 			echo  $m->title;
+// 			// echo '</h2>';
+// 			echo '</a></li>';  
+//         }
+//     }
    
-    return $menu;
-}
+//     return $menu;
+// }
 
-//Candidate footer menu
-function wp_get_candidate_footer_menu_array($current_menu) {
+// //Candidate footer menu
+// function wp_get_candidate_footer_menu_array($current_menu) {
 
-    $array_menu = wp_get_nav_menu_items($current_menu);
+//     $array_menu = wp_get_nav_menu_items($current_menu);
  
-    foreach ($array_menu as $m) {  
-		if (empty($m->menu_item_parent)) {     
-			echo '<li><a href="';
- 			echo $m->url;
- 			echo '" class="pb-1 d-block">';
-			//echo '<h2>';
-			echo  $m->title;
-			// echo '</h2>';
-			echo '</a></li>';  
-        }
-    }
+//     foreach ($array_menu as $m) {  
+// 		if (empty($m->menu_item_parent)) {     
+// 			echo '<li><a href="';
+//  			echo $m->url;
+//  			echo '" class="pb-1 d-block">';
+// 			//echo '<h2>';
+// 			echo  $m->title;
+// 			// echo '</h2>';
+// 			echo '</a></li>';  
+//         }
+//     }
    
-    return $menu;
-}
+//     return $menu;
+// }
 
-//Social Media footer menu
-function wp_get_social_media_footer_menu_array($current_menu) {
+// //Social Media footer menu
+// function wp_get_social_media_footer_menu_array($current_menu) {
 
-    $array_menu = wp_get_nav_menu_items($current_menu);
+//     $array_menu = wp_get_nav_menu_items($current_menu);
  
-    foreach ($array_menu as $m) {  
-		if (empty($m->menu_item_parent)) {     
-			if($m->title == 'Twitter'){
-				echo '<li class="ftco-animate"><a href="';
-				echo $m->url;
-			    echo '"><span class="icon-twitter"></span></a></li>';
-			}elseif($m->title == 'Facebook'){
-				echo '<li class="ftco-animate"><a href="';
-				echo $m->url;
-				echo '"><span class="icon-facebook"></span></a></li>';
-			}elseif($m->title == 'Instagram'){
-				echo '<li class="ftco-animate"><a href="';
-				echo $m->url;
-				echo '"><span class="icon-instagram"></span></a></li>';
-			}else{
-				//do nothing
-			}
-        }
-    }
+//     foreach ($array_menu as $m) {  
+// 		if (empty($m->menu_item_parent)) {     
+// 			if($m->title == 'Twitter'){
+// 				echo '<li class="ftco-animate"><a href="';
+// 				echo $m->url;
+// 			    echo '"><span class="icon-twitter"></span></a></li>';
+// 			}elseif($m->title == 'Facebook'){
+// 				echo '<li class="ftco-animate"><a href="';
+// 				echo $m->url;
+// 				echo '"><span class="icon-facebook"></span></a></li>';
+// 			}elseif($m->title == 'Instagram'){
+// 				echo '<li class="ftco-animate"><a href="';
+// 				echo $m->url;
+// 				echo '"><span class="icon-instagram"></span></a></li>';
+// 			}else{
+// 				//do nothing
+// 			}
+//         }
+//     }
    
-    return $menu;
-}
+//     return $menu;
+// }
 
 // function get_primary_category( $post = 0 ) {
 // if ( ! $post ) {
@@ -409,33 +407,33 @@ function wp_get_social_media_footer_menu_array($current_menu) {
 
 // //customize Leave  A  comment in to article page and post page
 // // comment form fields:
-add_filter( 'comment_form_default_fields', 'mo_comment_fields_custom_html' );
-function mo_comment_fields_custom_html( $fields ) {
-    // first unset the existing fields:
-    unset( $fields['comment'] );
-    unset( $fields['author'] );
-    unset( $fields['email'] );
-    unset( $fields['url'] );
-    //  re-define them as needed:
-    $fields = [
+// add_filter( 'comment_form_default_fields', 'mo_comment_fields_custom_html' );
+// function mo_comment_fields_custom_html( $fields ) {
+//     // first unset the existing fields:
+//     unset( $fields['comment'] );
+//     unset( $fields['author'] );
+//     unset( $fields['email'] );
+//     unset( $fields['url'] );
+//     //  re-define them as needed:
+//     $fields = [
 
-            'author' => '  <div class="comment-form-wrap pt-5"><div class="form-group">' . ' <label for="name">' . __( '', 'textdomain'  ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label>' ,
+//             'author' => '  <div class="comment-form-wrap pt-5"><div class="form-group">' . ' <label for="name">' . __( '', 'textdomain'  ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label>' ,
         
-            '<input class="form-control" id="name" name="author" placeholder="Name *" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $aria_req . $html_req . ' required /></div>',
-        'email'  => '<div class="form-group"><label for="email">' . __( '', 'textdomain'  ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-            '<input  class="form-control" id="email" placeholder="Email *" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $aria_req . $html_req  . ' required /></div>',
-            'comment_field' => '<div class="form-group"><label for="message">' . _x( '', 'noun', 'textdomain' ) . '</label> ' ,
-            '<textarea class="form-control" id="comment" placeholder="Message *" name="comment" cols="45" rows="5" maxlength="65525" aria-required="true" required="required"></textarea></div><div class="form-group">
-			<input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
-		  </div></div>',
+//             '<input class="form-control" id="name" name="author" placeholder="Name *" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $aria_req . $html_req . ' required /></div>',
+//         'email'  => '<div class="form-group"><label for="email">' . __( '', 'textdomain'  ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+//             '<input  class="form-control" id="email" placeholder="Email *" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $aria_req . $html_req  . ' required /></div>',
+//             'comment_field' => '<div class="form-group"><label for="message">' . _x( '', 'noun', 'textdomain' ) . '</label> ' ,
+//             '<textarea class="form-control" id="comment" placeholder="Message *" name="comment" cols="45" rows="5" maxlength="65525" aria-required="true" required="required"></textarea></div><div class="form-group">
+// 			<input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+// 		  </div></div>',
         
-    ];
+//     ];
     
-    return $fields;
-}
+//     return $fields;
+// }
 // remove default comment form 
-add_filter( 'comment_form_defaults', 'mo_remove_default_comment_field', 10, 1 ); 
-function mo_remove_default_comment_field( $defaults ) { if ( isset( $defaults[ 'comment_field' ] ) ) { $defaults[ 'comment_field' ] = ''; } return $defaults; }
+//add_filter( 'comment_form_defaults', 'mo_remove_default_comment_field', 10, 1 ); 
+//function mo_remove_default_comment_field( $defaults ) { if ( isset( $defaults[ 'comment_field' ] ) ) { $defaults[ 'comment_field' ] = ''; } return $defaults; }
 
 
 // //woocomerce theme support
